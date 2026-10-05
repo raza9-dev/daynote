@@ -18,7 +18,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - uses: android-actions/setup-android@v3
+      # The GitHub runner already has the Android SDK installed (ANDROID_HOME).
 
       - name: Build APK and AAB
         run: |
